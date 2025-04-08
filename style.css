@@ -1,0 +1,218 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Bookman, URW Bookman L, serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #007bff, #ffffff);
+    background-color: #0268ddc0;
+    background-image: url('/imagens/fundo2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    animation: fadein 3s ease-in-out;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* Estilos para a navbar */
+  .navbar {
+    background-color: #0268ddc0;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+    animation: slideIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #apresentacao {
+    animation: slideIn 1s ease-in-out;
+  }
+  #sobre-nos {
+    animation: slideIn 1s ease-in-out;
+  }
+  #contato {
+    animation: slideIn 1s ease-in-out;
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  /* Estilos para o main */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  section {
+    background-color: #ece9b5;
+    opacity: 0.9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #033f3f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #01b5fc;
+  }
+  
+  /* Estilos para o footer */
+  footer {
+    background-color: #0268ddc0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para o botão Voltar para o início */
+  .voltar-para-o-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .voltar-para-o-inicio:hover {
+    background-color: #444;
+  }
+  
+  /* Estilos responsivos */
+  @media only screen and (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+    .navbar li {
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 10px;
+    }
+    section {
+      padding: 10px;
+    }
+    footer {
+      padding: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .navbar {
+      padding: 10px;
+    }
+    .navbar ul {
+      flex-direction: column;
+    }
+    .navbar li {
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 5px;
+    }
+    section {
+      padding: 5px;
+    }
+    footer {
+      padding: 5px;
+    }
+  }
